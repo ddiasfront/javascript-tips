@@ -1,0 +1,20 @@
+{
+  "name": "javascript-tips",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddiasfront/javascript-tips.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddiasfront/javascript-tips/issues"
+  },
+  "homepage": "https://github.com/ddiasfront/javascript-tips#readme"
+}
