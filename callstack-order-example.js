@@ -48,14 +48,14 @@ console.log('3 Main code completed');
    const afterPresenting = (isAsync) => {
       return new Promise(resolve =>{ 
          setTimeout(() => {
-            resolve(console.log(`${isAsync ? '6 Executed after the macro cause of timeout even in micro' : '4 Executed before macro cause out of timeout and in micro'}`));
+            resolve(console.log(`${isAsync ? '6 Async method executed after 6s' : '4 Executed before timeout, promise microtask'}`));
          }, isAsync ? 5000 : 0);
       });
    }
 
    const asyncPresenting = async(isAsync) => {
       await afterPresenting(isAsync);
-      console.log('7 And this will execute only after getting the timeout done even in micro');
+      console.log('7 Executed after async method');
       
    }
    afterPresenting()
