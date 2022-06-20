@@ -3,7 +3,7 @@
 ## 1 - Event Loops / Timers / Promises vs Observables / Event Emitters
 ### 1- Event LOOP => (CallStack => Micro Tasks => Macro Tasks)
 
-EVENT LOOP 
+EVENT LOOP JAVASCRIPT
 
 ```sh
 1st Scope => Call CallStack 
@@ -18,5 +18,13 @@ EVENT LOOP
 ( tTimeout, setInterval, setImmediate, requestAnimationFrame, I/O, UI rendering )
 ```
 
+EVENT LOOP NODEJS
 
+```sh                          
+                               INTERVAL BETWEEN ANY OF THESE PHASES =>
+1st Expired timer callbacks                     |          
+2nd I/O Polling and callbacks                   |           => Process.nextTick             
+3rd SetImmediate                                |           => Other Microtasks ( Resolved Promises)
+4th Close callbacks                             |
+```
 
