@@ -46,11 +46,10 @@ process.nextTick(() => {console.log('3.1 Next')});
 
 
 //MICRO TASK 
-   //process.nextTick
-   //Object.observe
-   //MutationObserver
-   //Async await
-   ///PROMISES
+   //Object.observe --- DEPRECATED
+   //MutationObserver --- NON NODEJS ATTRIBUTE
+   
+   ///Promises
    const afterPresenting = (isAsync) => {
       return new Promise(resolve =>{ 
          setTimeout(() => {
@@ -60,6 +59,7 @@ process.nextTick(() => {console.log('3.1 Next')});
       });
    }
 
+   //Async await
    const asyncPresenting = async(isAsync) => {
       await afterPresenting(isAsync);
       console.log('7 Executed after async method');
