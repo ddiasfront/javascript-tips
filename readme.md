@@ -1,4 +1,4 @@
-# Javascripto 10 tips - Following Durand Neto
+# Javascripto 10 tips 
 
 ## 1 - Event Loops / Timers / Promises vs Observables / Event Emitters
 ### 1- Event LOOP => (CallStack => Micro Tasks => Macro Tasks)
